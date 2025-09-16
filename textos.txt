@@ -1,0 +1,71 @@
+const = constante ela faz o valor mostrado a uma variavel permanecer o mesmo e não mudar 
+
+console.log(nome_variavel); = printa o valor da variavel 
+
+let nome = " Seu nome vai aqui"; - pode ser alterada para outro valor
+
+Exemplo:
+
+console.log(nome);
+Seu nome vai aqui
+
+nome = 'Pedro'
+Console.log(nome);
+Pedro
+
+% = é o modulo da divisão.
+++ = acrescenta 1 a cada execução
+-- = diminui 1 a cada execução
+
+let raio = 10
+console.log(++raio)
+11
+console.log(--raio)
+10
+
+e(&&) = todas tem que ser verdadeira para dar true.
+
+raio > 2
+verdadeiro
+raio > 2 && raio > 11
+falso
+raio > 2 && raio < 11
+verdadeiro
+
+ou(||) = uma tem que ser verdadeira para dar true.
+
+raio < 2
+falso
+raio > 2 || raio > 11
+verdadeiro
+raio > 2 || raio < 11
+verdadeiro
+
+não(!) = transforma oq for verdadeiro em falso e vice versa.
+
+!raio < 2
+verdadeiro
+!raio > 2 || raio > 11
+falso
+!raio > 2 || raio < 11
+falso
+
+if e else
+
+São iguais o do c#
+
+let hour = 11
+
+if (hour < 12)
+{
+ comprimento = " bom dia ";
+}
+else if (hour <18)
+{
+ comprimento = " boa tarde ";
+}
+else
+{
+ comprimento = " boa noite ";
+}
+
