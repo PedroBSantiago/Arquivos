@@ -1,0 +1,93 @@
+# importar o modulo do mysql-connector-python
+import mysql.connector
+
+connection = mysql.connector.connect(host='localhost',database='db_nota',user='root',password='10121416')
+
+
+# confirmação de conexão
+
+# if connection.is_connected():
+#     # db_info = connection.get_server_info()
+#     # print("Conectado ao servidor MySQL versão ", db_info)
+#     cursor = connection.cursor()
+#     cursor.execute("select database();")
+    # linha = cursor.fetchone()
+    # print("Conectado ao banco de dados ", linha)
+# else:
+#     print("Não foi possível conectar ao banco de dados")
+
+# encerramento da conexão
+# if connection.is_connected():
+#     cursor.close()
+#     connection.close()
+#     print("Conexão encerrada")
+
+
+
+criar_tabela= """create table tb_cliente (
+                    CNPJ VARCHAR(14) primary key,
+                    nm_razao_social VARCHAR(30) not null,
+                    nm_pais VARCHAR(20),
+                    nm_email VARCHAR(40) not null);
+
+                      create table tb_produto (
+                    cd_produto INT primary key auto_increment,
+                    nm_produto VARCHAR(25) not null,
+                    vl_unitario Decimal(6,2) not null
+                );
+
+                    create table tb_nota (
+                    cd_nota INT primary key auto_increment,
+                    dt_emissao DATE not null,
+                    dt_envio DATE not null,
+                    vl_total Decimal(6,2) null,
+                    fk_CNPJ VARCHAR(14) not null,
+                    foreign key (fk_CNPJ) references tb_cliente (CNPJ)
+                 );
+
+                  
+                    create table tb_produto_nota (
+                    cd_item INT primary key auto_increment,
+                    fk_cd_produto INT not null,
+                    fk_cd_nota INT not null,
+                    foreign key (fk_cd_produto) references tb_produto (cd_produto),
+                    foreign key (fk_cd_nota) references tb_nota (cd_nota),
+                    qt_produto INT not null,
+                    vl_total_item Decimal(6,2) not null
+                );
+"""
+
+criar_insert = """
+
+
+
+"""
+criar_select = """
+
+
+
+"""
+criar_join = """
+
+
+
+"""
+
+criar_view = """
+
+
+
+"""
+
+
+cursor = connection.cursor()
+cursor.execute(criar_tabela)
+cursor.execute(criar_insert)
+cursor.execute(criar_select)
+cursor.execute(criar_join)
+cursor.execute(criar_view)
+print("Tabelas criadas com sucesso")
+print("conteudo colocado com sucesso")
+print("selects e joins feitos")
+print("tabelas view criadas")
+# cursor.close()

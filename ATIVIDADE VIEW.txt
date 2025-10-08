@@ -1,0 +1,16 @@
+ATIVIDADE VIEW
+Venceu ontem às 23:59
+•
+Fechou ontem às 23:59
+Instruções
+Seguindo a imagem abaixo e o banco de dados da atividade anterior faça uma View com os seguintes dados:
+Nome assinante, 
+nome ramo, 
+tipo instalação, 
+cep endereço, 
+endereço, 
+complemento,  
+bairro, 
+municipio e o 
+telefone com ddd
+PARA QUE AS BUSCAS FICAREM MELHORES - FAÇA MAIS INSERÇÕES NO BANCO EM TODAS AS TABELAS
