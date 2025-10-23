@@ -66,22 +66,7 @@ ex:
 
 executável no Firefox
 
-stringJson = '{
-  "nome": "Pedro Henrique Bertojna Santiago",
-  "data_de_nascimento": "2008-08-30",
-  "naturalidade": "Santo André, SP",
-  "endereco": {
-    "rua": "Marcelo_Batista",
-    "numero": "1945",
-    "bairro": "Itaoca",
-    "cidade": "Mongaguá",
-    "estado": "SP",
-    "pais": "Brasil"
-  },
-  "telefone": "(13)98120-2818",
-  "email": "pedrohenriquebertojna@gmail.com",
-  "parentesco": "Filho"
-}'
+stringJson = '{"nome": "Pedro Henrique Bertojna Santiago","data_de_nascimento": "2008-08-30","naturalidade": "Santo André, SP","endereco": {"rua": "Marcelo_Batista","numero": "1945","bairro": "Itaoca","cidade": "Mongaguá","estado": "SP","pais": "Brasil"},"telefone": "(13)98120-2818","email": "pedrohenriquebertojna@gmail.com","parentesco": "Filho"}'
 obj = JSON.parse(stringJson);
 console.log(obj.nome);
 console.log(obj.data_de_nascimento);
@@ -91,21 +76,7 @@ console.log(obj.telefone);
 console.log(obj.email);
 console.log(obj.parentesco);
 ebadon = '{
-  "nome": "Jeferson lima moreira stalin",
-  "data_de_nascimento": "2010-09-20",
-  "naturalidade": "Santo André, SP",
-  "endereco": {
-    "rua": "Marcelo_Campista",
-    "numero": "197",
-    "bairro": "Santa",
-    "cidade": "Mongaguá",
-    "estado": "SP",
-    "pais": "Brasil"
-  },
-  "telefone": "(13)98120-2820",
-  "email": "Jefesonlima@gmail.com",
-  "parentesco": "neto"
-}'
+  "nome": "Jeferson lima moreira stalin","data_de_nascimento": "2010-09-20",  "naturalidade": "Santo André, SP","endereco": {"rua": "Marcelo_Campista","numero": "197","bairro": "Santa","cidade": "Mongaguá","estado": "SP","pais": "Brasil"},"telefone": "(13)98120-2820","email": "Jefesonlima@gmail.com","parentesco": "neto"}'
 objd = JSON.parse(ebadon);
 console.log(objd.nome);
 console.log(objd.data_de_nascimento);
@@ -115,22 +86,7 @@ console.log(objd.telefone);
 console.log(objd.email);
 console.log(objd.parentesco);
 
-stringa = '{
-  "nome": "Adolph Josef Hitler",
-  "data_de_nascimento": "1900-02-21",
-  "naturalidade": "Kreaniad, AL",
-  "endereco": {
-    "rua": "Marcelo_Banqueiram",
-    "numero": "1945",
-    "bairro": "Jorge",
-    "cidade": "Geron",
-    "estado": "Adridmin",
-    "pais": "Alemanha"
-  },
-  "telefone": "(13)93220-2311",
-  "email": "josefinoadolfinho@gmail.com",
-  "parentesco": "Pai"
-}'
+stringa = '{"nome": "Adolph Josef Hitler","data_de_nascimento": "1900-02-21","naturalidade": "Kreaniad, AL","endereco": {"rua": "Marcelo_Banqueiram","numero": "1945","bairro": "Jorge","cidade": "Geron","estado": "Adridmin","pais": "Alemanha"},"telefone": "(13)93220-2311","email": "josefinoadolfinho@gmail.com","parentesco": "Pai"}'
 objk = JSON.parse(stringa);
 console.log(objk.nome);
 console.log(objk.data_de_nascimento);
