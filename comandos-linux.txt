@@ -1,0 +1,48 @@
+senha--> root
+
+Comandos
+
+1 - sudo apt update
+
+2 - sudo apt install apache2
+
+3 - service --status-all
+
+4 - abrir o firefox 
+
+5 - digitar localhost na barra de endereços
+
+
+6 - de volta ao terminal acessar
+
+cd var/www/html
+
+
+mysql / mariadb
+
+
+
+    sudo apt install mysql-server -y /     sudo apt install mariadb-server mariadb-client
+
+
+    sudo mariadb-secure-installation
+
+    sudo systemctl start mariadb
+
+    sudo systemctl enable mariadb
+
+    sudo systemctl status mariadb
+
+    sudo mariadb -u root -p
+
+
+openssh server
+
+    sudo apt install openssh-server
+
+    sudo systemctl enable ssh
+    sudo systemctl start ssh
+
+    sudo ufw allow ssh
+
+    sudo systemctl status ssh
