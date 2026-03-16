@@ -1,0 +1,25 @@
+ React Native cria apps nativos e aplicativos pra desktop e web.
+  
+https://www.youtube.com/watch?v=20WH5xB54Hc
+
+ tutorial e códigos:
+
+  oq precisa ter pra usar react , no ambiente windowns , selecionar o target (local onde eu vou testar meu app), seguir passo a passo de config do site reactnative.dev ou baixar no expo.dev e ir no create a project para baixar o node/expo esse ambiente é mais simples e facil de utilizar.
+ criar pasta , entrar nela pelo cmd 
+ digitar npx create-expo-app -- template
+ selecionar a opção Navigation (Typescript)
+ colocar nome no projeto
+ o projeto aparece na pasta e pode ser aberto no vs code 
+ package.json  tem as especificações do app, ambiente , nome do app e as dependencias coisas  indispensáveis pro app e tem as dependencias de produção n é igual a anterior, tem as de     desenvolvimento linguagens usadas , o typescript é usado + no começo o javascript se mantem  em mais uso no final 
+ a pasta node de bibliotecas e pacotes pode ser apagada pra ser mais rapido de dar commit no 
+ git, para colocar ela denovo é só digitar npm install que gera baseado no package.json de acordo com as dependencias.
+ criar pasta scr para os arquivos do app criado por nós que vai separar das existentes e criar dentro dela a index.tsx é um arquivo de componente (react native) pode ser ts (typescript) e pro expo saber que isso é parte  do app colocar 'export default function Index(){
+ return(
+  
+ )
+}
+
+antes de tudo caso for preciso fazer importação de algo da biblioteca colocar ela nop inicio e escrever import {oq eu usar "ex: View, Text e etc"} from "react-native"
+
+
+parei no 32:45 no video.
